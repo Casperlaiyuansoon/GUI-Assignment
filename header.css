@@ -1,0 +1,148 @@
+/*header*/
+.header {
+    background-color: lightgrey;
+    padding: 2px;
+    display: flex;
+}
+
+/*left header*/
+.header-logo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-logo-img {
+    width: 120px;
+    height: 20px;
+    margin-left: 10%;
+    /* background-color: blue; */
+}
+
+/*center header*/
+.header-center-menu {
+    flex: 2;
+}
+
+.center-menu-ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
+.center-menu-ul li div {
+    padding: 3px 4px;
+}
+
+.center-menu-ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #7e7e7e;
+}
+
+.hover-animation {
+    display: inline-block;
+    position: relative;
+    color: #7e7e7e;
+}
+
+.hover-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #7e7e7e;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/*right header*/
+.header-right-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+
+.header-right-container div:first-child {
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-left: 1px solid darkgrey;
+}
+
+.header-right-container-profile,
+.header-right-container-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 18px;
+    /* background-color: aqua; */
+}
+
+.header-right-container div {
+    width: auto;
+}
+
+.pdl-15 {
+    padding-left: 15px;
+}
+
+/*----------------------------------------------------------------*/
+/* media query */
+/* hide header nav bar when in mobile view */
+@media(max-width:426px) {
+
+    .header-center-menu,
+    .header-right-container {
+        display: none;
+    }
+}
+
+.display-content {
+    /* display:none; */
+}
+
+/* ============================================================== */
+/* Footer */
+.footer {
+    background-color: darkgrey;
+    display: flex;
+}
+
+.footer .footer-box-1 {}
+
+.footer .footer-box-2 ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer .footer-box-2 ul li a {
+    text-decoration: none;
+}
+
+.footer .footer-box-3 ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer .footer-box-3 ul li a {
+    text-decoration: none;
+}
+
+.flex-1 {
+    flex: 1;
+}
