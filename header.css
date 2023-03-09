@@ -3,7 +3,18 @@
     background-color: lightgrey;
     padding: 2px;
     display: flex;
+    height: 70px;
 }
+
+/* .sticky{
+    position: fixed;
+    top:0;
+    width: 100%;
+} */
+
+/* .sticky + .content{
+    padding-top: 102px;
+} */
 
 /*left header*/
 .header-logo {
@@ -99,6 +110,14 @@
     padding-left: 15px;
 }
 
+.pdt-15 {
+    padding-top: 15px;
+}
+
+.pdb-15 {
+    padding-bottom: 15px;
+}
+
 /*----------------------------------------------------------------*/
 /* media query */
 /* hide header nav bar when in mobile view */
@@ -116,33 +135,60 @@
 
 /* ============================================================== */
 /* Footer */
-.footer {
+.footer{
+    background-color: aqua;
+}
+
+.footer-box {
     background-color: darkgrey;
+    padding: 20px;
     display: flex;
 }
 
-.footer .footer-box-1 {}
+.footer .footer-box-1 {
+    flex-direction: column;
+}
 
-.footer .footer-box-2 ul {
+.footer-box-2 ul li a {
+    text-decoration: none;
+}
+
+.footer-box-2 ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
 }
 
-.footer .footer-box-2 ul li a {
-    text-decoration: none;
-}
-
-.footer .footer-box-3 ul {
+.footer-box-3 ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
 }
 
-.footer .footer-box-3 ul li a {
+.footer-box-3 ul li a {
     text-decoration: none;
+}
+
+div.footer-box-2 ul a, div.footer-box-3 ul a{
+    color: lightgrey;
+}
+
+div.footer-box-2 ul a:hover, div.footer-box-3 ul a:hover{
+    color: white;
+    text-decoration: underline;
+    transition: 0.5s ease;
 }
 
 .flex-1 {
     flex: 1;
+}
+
+.flex-2{
+    flex:2;
+}
+
+/* ============================================================ */
+/* content */
+.h-200px {
+    height:200px;
 }
