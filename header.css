@@ -127,6 +127,8 @@
     .header-right-container {
         display: none;
     }
+    /* TODO  */
+    /* when hide, show the menu icon that list all the hidden element */
 }
 
 .display-content {
@@ -136,7 +138,7 @@
 /* ============================================================== */
 /* Footer */
 .footer{
-    background-color: aqua;
+
 }
 
 .footer-box {
@@ -191,4 +193,80 @@ div.footer-box-2 ul a:hover, div.footer-box-3 ul a:hover{
 /* content */
 .h-200px {
     height:200px;
+}
+
+.h-300px {
+    height:300px;
+}
+
+.w-40 {
+    width:40%;
+}
+
+.w-60 {
+    width:60%;
+}
+
+.w-80 {
+    width:80%;
+}
+
+.flex {
+    display: flex;
+}
+
+.margin_a {
+    margin: auto;
+}
+
+.center_flex_content {
+    justify-content: center;
+    align-items: center;
+}
+
+/* welcome-message */
+.content-welcome-message {
+    flex-direction: column;
+}
+
+.content_h5_font {
+    color: #333333;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: large;
+}
+
+.content_p_font {
+    text-align: justify;
+    line-height: 24px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    visibility: visible;
+    font-family: "Work Sans", sans-serif;
+    color: #777777;
+}
+
+/* catgory box */
+.content-home-category {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cat-box{
+    width:48%;
+    height: 220px;
+}
+
+/* testing */
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
 }
