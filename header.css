@@ -254,8 +254,8 @@ div.footer-box-2 ul a:hover, div.footer-box-3 ul a:hover{
 }
 
 .cat-box{
-    width:48%;
-    height: 220px;
+    width: 48%;
+    height: 240px;
 }
 
 /* testing */
@@ -269,4 +269,19 @@ div.footer-box-2 ul a:hover, div.footer-box-3 ul a:hover{
 
 .blue{
     background-color: blue;
+}
+
+/*----------------------------------------------------------------*/
+/* media query */
+/* hide header nav bar when in mobile view */
+@media(max-width:426px) {
+    .content-home-category{
+        justify-content: center;
+    }
+
+    .cat-box{
+        width: 95%;
+        height: 180px;
+    }
+
 }
