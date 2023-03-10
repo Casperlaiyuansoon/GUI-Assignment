@@ -34,13 +34,16 @@
 /*center header*/
 .header-center-menu {
     flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .center-menu-ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 45px;
+    gap: 50px;
 }
 
 .center-menu-ul li div {
@@ -255,20 +258,30 @@ div.footer-box-2 ul a:hover, div.footer-box-3 ul a:hover{
 
 .cat-box{
     width: 48%;
-    height: 240px;
+    height: 300px;
+    position: relative;
 }
 
-/* testing */
-.red{
-    background-color: red;
+.cat-box-img-container {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    overflow: hidden;
 }
 
-.green{
-    background-color: green;
+.cat-box-img-container img.category-img-container {
+    width: 100%;
+    height:100%;
+    z-index: -1;
 }
 
-.blue{
-    background-color: blue;
+.cat-box p.category-title-container {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /*----------------------------------------------------------------*/
