@@ -141,7 +141,7 @@
 /* ============================================================== */
 /* Footer */
 .footer{
-
+    margin-top: 30px;
 }
 
 .footer-box {
@@ -302,10 +302,12 @@ p.encourage-message {
     visibility: hidden;
 }
 
+/* when hover, move the title */
 img.category-img-container:hover ~ p.category-title-container {
     bottom: 45px;
 }
 
+/* when hover, make it visible and move it */
 img.category-img-container:hover ~ p.encourage-message {
     visibility: visible;
     bottom: 15px;
