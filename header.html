@@ -51,12 +51,12 @@
         <div class="header-right-container">
             <div class="header-right-container-profile">
                 <i class="fa fa-user" alt="user icon"></i>
-                <span class="pdl-15 display-content">leonard</span>
+                <span class="pdl-15">leonard</span>
             </div>
 
             <div class="header-right-container-cart">
                 <i class="fa fa-shopping-cart" alt="cart icon"></i>
-                <span class="pdl-15 display-content">5</span>
+                <span class="pdl-15">5</span>
             </div>
         </div>
 
@@ -105,39 +105,56 @@
 
         <div class="content-home-category flex margin_a pdt-15 w-80">
             <div class="cat-box cat-1">
-                <div class="cat-box-img-container">
-                    <img class="category-img-container" src="assets/home_category_image/sandals.jpg" alt="category-1">
-                </div>
-                <p class="category-title-container">Sandals</p>
+                <!-- insert address with the category id pass value -->
+                <a href="">
+                    <div class="cat-box-img-title-container">
+                        <img class="category-img-container" src="assets/home_category_image/sandals.jpg" alt="category-1" href="">
+                        <p class="category-title-container">Sandals</p>
+                        <p class="encourage-message">Explore now</p>
+                    </div>
+
+                </a>
             </div>
 
             <div class="cat-box cat-2">
-                <div class="cat-box-img-container">
-                    <img class="category-img-container" src="assets/home_category_image/heels.jpg" alt="category-1">
-                </div>
-                <p class="category-title-container">Heels</p>
+                <a href="">
+                    <div class="cat-box-img-title-container">
+                        <img class="category-img-container" src="assets/home_category_image/heels.jpg" alt="category-1">
+                        <p class="category-title-container">Heels</p>
+                        <p class="encourage-message">Explore now</p>
+                    </div>
+                </a>
             </div>
 
             <div class="cat-box cat-3">
-                <div class="cat-box-img-container">
-                    <img class="category-img-container" src="assets/home_category_image/boots.jpg" alt="category-1">
-                </div>
-                <p class="category-title-container">Boots</p>
+                <a href="">
+                    <div class="cat-box-img-title-container">
+                        <img class="category-img-container" src="assets/home_category_image/boots.jpg" alt="category-1">
+                        <p class="category-title-container">Boots</p>
+                        <p class="encourage-message">Explore now</p>
+                    </div>
+                </a>
             </div>
 
             <div class="cat-box cat-4">
-                <div class="cat-box-img-container">
-                    <img class="category-img-container" src="assets/home_category_image/slipper.jpg" alt="category-1">
-                </div>
-                <p class="category-title-container">Slipper</p>
+                <a href="">
+                    <div class="cat-box-img-title-container">
+                        <img class="category-img-container" src="assets/home_category_image/slipper.jpg" alt="category-1">
+                        <p class="category-title-container">Slipper</p>
+                        <p class="encourage-message">Explore now</p>
+                    </div>
+                </a>
             </div>
 
             <div class="cat-box cat-5">
-                <div class="cat-box-img-container">
-                    <img class="category-img-container" src="assets/home_category_image/sneaker.jpg" alt="category-1">
+                <a href="">
+                    <div class="cat-box-img-title-container">
+                        <img class="category-img-container" src="assets/home_category_image/sneaker.jpg" alt="category-1">
+                        <p class="category-title-container">Sneaker</p>
+                        <p class="encourage-message">Explore now</p>
+                    </div>
                 </div>
-                <p class="category-title-container">Sneaker</p>
-            </div>
+                </a>
         </div>
 
 
@@ -185,9 +202,27 @@
 
 </html>
 <script>
-$('.carousel').carousel({
-  interval: 2000
-})
+// $('.carousel').carousel({
+//   interval: 2000
+// })
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("header");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 
 
 </script>

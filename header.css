@@ -4,17 +4,18 @@
     padding: 2px;
     display: flex;
     height: 70px;
+    z-index: 2;
 }
 
-/* .sticky{
+.sticky{
     position: fixed;
     top:0;
     width: 100%;
 } */
 
-/* .sticky + .content{
+.sticky + .content{
     padding-top: 102px;
-} */
+}
 
 /*left header*/
 .header-logo {
@@ -28,7 +29,6 @@
     width: 120px;
     height: 20px;
     margin-left: 10%;
-    /* background-color: blue; */
 }
 
 /*center header*/
@@ -134,8 +134,8 @@
     /* when hide, show the menu icon that list all the hidden element */
 }
 
-.display-content {
-    /* display:none; */
+.display-none {
+    display: none;
 }
 
 /* ============================================================== */
@@ -262,27 +262,55 @@ div.footer-box-2 ul a:hover, div.footer-box-3 ul a:hover{
     position: relative;
 }
 
-.cat-box-img-container {
+.cat-box-img-title-container {
     width: 100%;
     height: 100%;
     object-fit:cover;
     overflow: hidden;
+    border-radius: 3px;
 }
 
-.cat-box-img-container img.category-img-container {
+img.category-img-container {
     width: 100%;
     height:100%;
     z-index: -1;
+    transition: all 1.5s ease;
 }
 
-.cat-box p.category-title-container {
+img.category-img-container:hover {
+    transform: scale(1.2,1.2);
+}
+
+p.category-title-container {
     position: absolute;
     bottom: 15px;
     left: 15px;
     color: white;
     font-size: large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: all 1.5s ease;
 }
+
+p.encourage-message {
+    position:absolute;
+    left: 15px;
+    bottom: -20px;
+    color: white;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition:  all 1.5s ease;
+    visibility: hidden;
+}
+
+img.category-img-container:hover ~ p.category-title-container {
+    bottom: 45px;
+}
+
+img.category-img-container:hover ~ p.encourage-message {
+    visibility: visible;
+    bottom: 15px;
+}
+
 
 /*----------------------------------------------------------------*/
 /* media query */
