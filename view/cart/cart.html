@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
 
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <!-- fontawsome -->
-        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-            crossorigin="anonymous"></script> 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    
-        <!-- Title & Icon -->
-        <title>Shoe Assignment</title>
-        <link rel="shoe icon" href="../../assets/app/favicon.ico" />
-    
-        <link href="cart.css"                            rel="stylesheet" type="text/css">
-        <link href="../../css/declared_design_class.css" rel="stylesheet" type="text/css">
-        <link href="../../css/reset.css"                 rel="stylesheet" type="text/css">
-    
+<head>
 
-    </head>
-    <body>
-            <!-- header -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Title & Icon -->
+    <title>Shoe Assignment</title>
+    <link rel="shoe icon" href="../../assets/app/favicon.ico" />
+
+    <link href="cart.css" rel="stylesheet" type="text/css">
+    <link href="../../css/declared_design_class.css" rel="stylesheet" type="text/css">
+    <link href="../../css/reset.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+    <!-- header -->
     <div class="header" id="header">
         <div class="header-logo">
             <!-- logo -->
@@ -63,44 +65,87 @@
     </div>
     <!-- end of header -->
 
-        <!-- footer -->
-        <div class="footer pdt-15">
+    <div class="content flex center_flex_content">
 
-            <div class="footer-box">
-                <div class="footer-box-1 flex-2">
-                    <div>
-                        <!-- logo -->
-                        <img src="../../assets/app/logo-alt.png" alt="logo" class="header-logo-img">
-                    </div>
-                    <div class="pdt-15">
-                        <p>&#169;2023 Shoe Assignment</p>
-                        <p>All Right Reserved</p>
-                    </div>
-    
-                </div>
-    
-                <div class="footer-box-2 flex-1">
-                    <p class="pdb-15">Site Map</p>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Shop</a></li>
-                    </ul>
-                </div>
-    
-                <div class="footer-box-3 flex-1">
-                    <p class="pdb-15">Useful Links</p>
-                    <ul>
-                        <li><a href="">Private Policy</a></li>
-                        <li><a href="">Term & Condition</a></li>
-                    </ul>
-                </div>
-            </div>
-    
+        <div class="content-header-bar flex w-80 margin_a center_flex_content mt-15px">
+            <div class="header-bar-content-1 flex-1"></div>
+            <div class="header-bar-content-2 flex-4">Item</div>
+            <div class="header-bar-content-3 flex-1">Price</div>
+            <div class="header-bar-content-4 flex-1">Quantity</div>
+            <div class="header-bar-content-5 flex-1">Total</div>
         </div>
-        <!-- end of footer -->
 
-    </body>
+        <div class="content-body flex w-80 mt-15px">
+
+            <div class="cart-item-container flex flex-1 center_flex_content">
+
+                <div class="item-checkbox flex-1">
+                    <input type="checkbox" class="checkbox" name="item-checked">
+                </div>
+
+                <div class="item-img-name flex flex-4">
+                    <img src="" alt="item-img" class="flex-1">
+                    <p class="flex-2">Shoes 1</p>
+                </div>
+
+                <div class="item-price flex-1">
+                    RM20.00 
+                </div>
+
+                <div class="item-quantity flex-1">
+                    1
+                </div> 
+                
+                <div class="item-total flex-1">
+                    RM20.00
+                </div>
+
+
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <div class="footer pdt-15">
+
+        <div class="footer-box">
+            <div class="footer-box-1 flex-2">
+                <div>
+                    <!-- logo -->
+                    <img src="../../assets/app/logo-alt.png" alt="logo" class="header-logo-img">
+                </div>
+                <div class="pdt-15">
+                    <p>&#169;2023 Shoe Assignment</p>
+                    <p>All Right Reserved</p>
+                </div>
+
+            </div>
+
+            <div class="footer-box-2 flex-1">
+                <p class="pdb-15">Site Map</p>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Shop</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box-3 flex-1">
+                <p class="pdb-15">Useful Links</p>
+                <ul>
+                    <li><a href="">Private Policy</a></li>
+                    <li><a href="">Term & Condition</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- end of footer -->
+
+</body>
+
 </html>
 
 <script>

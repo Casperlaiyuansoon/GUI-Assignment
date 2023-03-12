@@ -173,3 +173,29 @@ div.footer-box-2 ul a:hover, div.footer-box-3 ul a:hover{
 }
 
 /* END OF HEADER & FOOTER */
+
+/* content */
+.content {
+    flex-direction: column;
+}
+
+.content-header-bar {
+    background-color: #7e7e7e;
+    height: 40px;
+}
+
+.content-header-bar div{
+    color: aliceblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content-body {
+    background-color: #7e7e7e;
+    height: 160px;
+
+}
+
+.checkbox {
+    width:  30px;
+    height: 30px;
+}
