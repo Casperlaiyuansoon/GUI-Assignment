@@ -137,6 +137,27 @@
     display: none;
 }
 
+/* custom scrool bar */
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #d4e4fe; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #6f92f1; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #487aff; 
+  }
+
 /* ============================================================== */
 /* Footer */
 .footer{

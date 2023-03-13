@@ -126,16 +126,45 @@
 @media(max-width:426px) {
 
     .header-center-menu,
-    .header-right-container {
+    .header-right-container a.link {
         display: none;
+    }
+
+    .break {
+        flex-basis: 100%;
+        height: 0;
     }
     /* TODO  */
     /* when hide, show the menu icon that list all the hidden element */
+    #header-menu-icon {
+        display: block;
+    }
 }
 
 .display-none {
     display: none;
 }
+
+/* custom scrool bar */
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #d4e4fe; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #6f92f1; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #487aff; 
+  }
 
 /* ============================================================== */
 /* Footer */
