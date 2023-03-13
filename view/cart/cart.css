@@ -1,6 +1,6 @@
 /*header*/
 .header {
-    background-color: lightgrey;
+    background-color: white;
     padding: 2px;
     display: flex;
     height: 70px;
@@ -29,7 +29,7 @@
     width: 200px;
     height: 100%;
     object-fit:cover;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 /*center header*/
@@ -54,13 +54,13 @@
 .center-menu-ul li a {
     text-decoration: none;
     font-weight: 500;
-    color: #7e7e7e;
+    color: #7595C6;
 }
 
 .hover-animation {
     display: inline-block;
     position: relative;
-    color: #7e7e7e;
+    color: #7595C6;
 }
 
 .hover-animation:after {
@@ -71,7 +71,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #7e7e7e;
+    background-color: #7595C6;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -90,11 +90,21 @@
     /* background-color: aquamarine; */
 }
 
-.header-right-container div:first-child {
+.header-right-container a:first-child {
     padding-left: 20px;
     padding-top: 8px;
     padding-bottom: 8px;
-    border-left: 1px solid darkgrey;
+    border-left: 1px solid #7595C6;
+}
+
+.header-right-container a.link {
+    text-decoration: none;
+    color: #7595C6;
+    transition: all 0.2s ease;
+}
+
+.header-right-container a.link:hover {
+    color: #A8BaDF;
 }
 
 .header-right-container-profile,
@@ -134,7 +144,7 @@
 }
 
 .footer-box {
-    background-color: darkgrey;
+    background-color: #7cafc4;
     padding: 20px;
     display: flex;
 }
@@ -181,7 +191,7 @@ div.footer-box-2 ul a:hover, div.footer-box-3 ul a:hover{
 }
 
 .content-header-bar {
-    background-color: #7e7e7e;
+    background-color: #7595C6;
     height: 40px;
 }
 
@@ -196,7 +206,7 @@ div.footer-box-2 ul a:hover, div.footer-box-3 ul a:hover{
 }
 
 .item-container {
-    background-color: #7e7e7e;
+    background-color: whitesmoke;
     height: 160px;
     border-radius: 4px;
 }
@@ -237,7 +247,8 @@ div.footer-box-2 ul a:hover, div.footer-box-3 ul a:hover{
 
 /* quantity button */
 .value-button {
-    background-color: darkgrey;
+    background-color: whitesmoke;
+    border-radius: 1px;
   }
   
   .value-button:hover {
@@ -257,7 +268,6 @@ div.footer-box-2 ul a:hover, div.footer-box-3 ul a:hover{
 /* total when in mobile view */
 @media(max-width:426px) {
     .header-bar-content-3, .header-bar-content-4, .header-bar-content-5 {
-        background-color: aqua;
         display: none !important;
     }
 
@@ -279,9 +289,10 @@ div.footer-box-2 ul a:hover, div.footer-box-3 ul a:hover{
 }
 
 .content-footer {
-    background-color: grey;
+    background-color: #7595C6;
     flex-direction: column;
     gap: 15px;
+    color: white;
 }
 
 .cal_cart_total {

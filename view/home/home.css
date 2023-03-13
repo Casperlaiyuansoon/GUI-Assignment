@@ -1,6 +1,6 @@
 /*header*/
 .header {
-    background-color: lightgrey;
+    background-color: white;
     padding: 2px;
     display: flex;
     height: 70px;
@@ -26,8 +26,9 @@
 }
 
 .header-logo-img {
-    width: 120px;
-    height: 20px;
+    width: 200px;
+    height: 100%;
+    object-fit:cover;
     margin-left: 10%;
 }
 
@@ -53,13 +54,13 @@
 .center-menu-ul li a {
     text-decoration: none;
     font-weight: 500;
-    color: #7e7e7e;
+    color: #7595C6;
 }
 
 .hover-animation {
     display: inline-block;
     position: relative;
-    color: #7e7e7e;
+    color: #7595C6;
 }
 
 .hover-animation:after {
@@ -70,7 +71,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #7e7e7e;
+    background-color: #7595C6;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -89,11 +90,21 @@
     /* background-color: aquamarine; */
 }
 
-.header-right-container div:first-child {
+.header-right-container a:first-child {
     padding-left: 20px;
     padding-top: 8px;
     padding-bottom: 8px;
-    border-left: 1px solid darkgrey;
+    border-left: 1px solid #7595C6;
+}
+
+.header-right-container a.link {
+    text-decoration: none;
+    color: #7595C6;
+    transition: all 0.2s ease;
+}
+
+.header-right-container a.link:hover {
+    color: #A8BaDF;
 }
 
 .header-right-container-profile,
@@ -133,7 +144,7 @@
 }
 
 .footer-box {
-    background-color: darkgrey;
+    background-color: #7cafc4;
     padding: 20px;
     display: flex;
 }
