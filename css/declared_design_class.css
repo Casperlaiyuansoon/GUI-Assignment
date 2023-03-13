@@ -11,6 +11,10 @@
     padding-bottom: 15px;
 }
 
+.pdb-5 {
+    padding-bottom: 5px;
+}
+
 /* flex */
 .flex-1 {
     flex: 1;
@@ -103,4 +107,8 @@
 
 .ml-15px {
     margin-left: 15px;
+}
+
+.mb-15px {
+    margin-bottom: 15px;
 }

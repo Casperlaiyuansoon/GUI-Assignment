@@ -145,7 +145,7 @@
 
 .footer-box {
     background-color: #7cafc4;
-    padding: 20px;
+    padding: 100px 20px;
     display: flex;
 }
 
@@ -181,6 +181,17 @@ div.footer-box-2 ul a:hover, div.footer-box-3 ul a:hover{
     color: white;
     text-decoration: underline;
     transition: 0.5s ease;
+}
+
+.footer-logo-img-container {
+    width: 80%;
+    width: 120px;
+    object-fit: cover;
+}
+
+.footer-logo-img {
+    width: 100%;
+    height: 100%;
 }
 
 /* END OF HEADER & FOOTER */
