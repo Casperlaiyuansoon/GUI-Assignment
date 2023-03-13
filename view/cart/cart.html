@@ -33,7 +33,7 @@
     <div class="header" id="header">
         <div class="header-logo">
             <!-- logo -->
-            <img src="../../assets/app/logo-alt.png" alt="logo" class="header-logo-img">
+            <img src="../../assets/app/flash_logo.png" alt="logo" class="header-logo-img">
         </div>
 
         <div class="header-center-menu">
@@ -67,43 +67,208 @@
 
     <div class="content flex center_flex_content">
 
-        <div class="content-header-bar flex w-80 margin_a center_flex_content mt-15px">
+        <div class="content-header-bar flex w-85 margin_a center_flex_content mt-15px">
             <div class="header-bar-content-1 flex-1"></div>
-            <div class="header-bar-content-2 flex-4">Item</div>
-            <div class="header-bar-content-3 flex-1">Price</div>
-            <div class="header-bar-content-4 flex-1">Quantity</div>
-            <div class="header-bar-content-5 flex-1">Total</div>
+            <div class="header-bar-content-2 flex left_justify_content flex-3">Item</div>
+            <div class="header-bar-content-3 flex center_justify_content flex-1">Price</div>
+            <div class="header-bar-content-4 flex center_justify_content flex-1">Quantity</div>
+            <div class="header-bar-content-5 flex center_justify_content flex-1">Total</div>
         </div>
 
-        <div class="content-body flex w-80 mt-15px">
+        <div class="content-body flex w-85 mt-15px">
+            <!-- cart item -->
 
-            <div class="cart-item-container flex flex-1 center_flex_content">
+            <div class="item-container flex">
 
-                <div class="item-checkbox flex-1">
-                    <input type="checkbox" class="checkbox" name="item-checked">
+                <div class="cart-item-container flex flex-1 center_flex_content">
+                    <div class="item-checkbox flex center_justify_content flex-1">
+                        <input type="checkbox" class="checkbox" name="item-checked">
+                    </div>
+                    <div class="item-img-name flex flex-3">
+                        <div class="item-img-container flex-1">
+                            <img src="../../assets/home_category_image/boots.jpg" alt="item-img" class="item-img">
+                        </div>
+                        <div class="item-name-container flex flex-2 margin_a">
+                            <p class="item-name">Shoes 1</p>
+                            <p class="item-variation">UK 8</p>
+                        </div>
+                    </div>
+                    <!-- force to break item into next row -->
+                    <div class="break"></div>
+                    <div class="item-price flex center_justify_content flex-1">
+                        RM20.00
+                    </div>
+                    <div class="item-quantity flex flex-1">
+                        <div class="item-quantity-container w-85 flex margin_a">
+                            <div class="value-button flex-1 flex center_justify_content center_align_item" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" class="flex-3" disabled/>
+                            <div class="value-button flex-1 flex center_justify_content center_align_item" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </div>
+                    <div class="item-total flex center_justify_content flex-1">
+                        RM20.00
+                    </div>
                 </div>
-
-                <div class="item-img-name flex flex-4">
-                    <img src="" alt="item-img" class="flex-1">
-                    <p class="flex-2">Shoes 1</p>
-                </div>
-
-                <div class="item-price flex-1">
-                    RM20.00 
-                </div>
-
-                <div class="item-quantity flex-1">
-                    1
-                </div> 
-                
-                <div class="item-total flex-1">
-                    RM20.00
-                </div>
-
-
             </div>
-            
+    
+            <div class="item-container flex">
+    
+                <div class="cart-item-container flex flex-1 center_flex_content">
+                    <div class="item-checkbox flex center_justify_content flex-1">
+                        <input type="checkbox" class="checkbox" name="item-checked">
+                    </div>
+                    <div class="item-img-name flex flex-3">
+                        <div class="item-img-container flex-1">
+                            <img src="../../assets/home_category_image/heels.jpg" alt="item-img" class="item-img">
+                        </div>
+                        <div class="item-name-container flex flex-2 margin_a">
+                            <p class="item-name">Shoes 1</p>
+                            <p class="item-variation">UK 8</p>
+                        </div>
+                    </div>
+                    <!-- force to break item into next row -->
+                    <div class="break"></div>
+                    <div class="item-price flex center_justify_content flex-1">
+                        RM25.00
+                    </div>
+                    <div class="item-quantity flex flex-1">
+                        <div class="item-quantity-container w-85 flex margin_a">
+                            <div class="value-button flex-1 flex center_justify_content center_align_item" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" class="flex-3" disabled/>
+                            <div class="value-button flex-1 flex center_justify_content center_align_item" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </div>
+                    <div class="item-total flex center_justify_content flex-1">
+                        RM25.00
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-container flex">
+    
+                <div class="cart-item-container flex flex-1 center_flex_content">
+                    <div class="item-checkbox flex center_justify_content flex-1">
+                        <input type="checkbox" class="checkbox" name="item-checked">
+                    </div>
+                    <div class="item-img-name flex flex-3">
+                        <div class="item-img-container flex-1">
+                            <img src="../../assets/home_category_image/sandals.jpg" alt="item-img" class="item-img">
+                        </div>
+                        <div class="item-name-container flex flex-2 margin_a">
+                            <p class="item-name">Shoes 3</p>
+                            <p class="item-variation">UK 8</p>
+                        </div>
+                    </div>
+                    <!-- force to break item into next row -->
+                    <div class="break"></div>
+                    <div class="item-price flex center_justify_content flex-1">
+                        RM30.00
+                    </div>
+                    <div class="item-quantity flex flex-1">
+                        <div class="item-quantity-container w-85 flex margin_a">
+                            <div class="value-button flex-1 flex center_justify_content center_align_item" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" class="flex-3" disabled/>
+                            <div class="value-button flex-1 flex center_justify_content center_align_item" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </div>
+                    <div class="item-total flex center_justify_content flex-1">
+                        RM30.00
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-container flex">
+    
+                <div class="cart-item-container flex flex-1 center_flex_content">
+                    <div class="item-checkbox flex center_justify_content flex-1">
+                        <input type="checkbox" class="checkbox" name="item-checked">
+                    </div>
+                    <div class="item-img-name flex flex-3">
+                        <div class="item-img-container flex-1">
+                            <img src="../../assets/home_category_image/slipper.jpg" alt="item-img" class="item-img">
+                        </div>
+                        <div class="item-name-container flex flex-2 margin_a">
+                            <p class="item-name">Shoes 1</p>
+                            <p class="item-variation">UK 8</p>
+                        </div>
+                    </div>
+                    <!-- force to break item into next row -->
+                    <div class="break"></div>
+                    <div class="item-price flex center_justify_content flex-1">
+                        RM40.00
+                    </div>
+                    <div class="item-quantity flex flex-1">
+                        <div class="item-quantity-container w-85 flex margin_a">
+                            <div class="value-button flex-1 flex center_justify_content center_align_item" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" class="flex-3" disabled/>
+                            <div class="value-button flex-1 flex center_justify_content center_align_item" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </div>
+                    <div class="item-total flex center_justify_content flex-1">
+                        RM40.00
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-container flex">
+    
+                <div class="cart-item-container flex flex-1 center_flex_content">
+                    <div class="item-checkbox flex center_justify_content flex-1">
+                        <input type="checkbox" class="checkbox" name="item-checked">
+                    </div>
+                    <div class="item-img-name flex flex-3">
+                        <div class="item-img-container flex-1">
+                            <img src="../../assets/home_category_image/sneaker.jpg" alt="item-img" class="item-img">
+                        </div>
+                        <div class="item-name-container flex flex-2 margin_a">
+                            <p class="item-name">Shoes 1</p>
+                            <p class="item-variation">UK 8</p>
+                        </div>
+                    </div>
+                    <!-- force to break item into next row -->
+                    <div class="break"></div>
+                    <div class="item-price flex center_justify_content flex-1">
+                        RM50.00
+                    </div>
+                    <div class="item-quantity flex flex-1">
+                        <div class="item-quantity-container w-85 flex margin_a">
+                            <div class="value-button flex-1 flex center_justify_content center_align_item" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                            <input type="number" id="number" value="0" class="flex-3" disabled/>
+                            <div class="value-button flex-1 flex center_justify_content center_align_item" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                        </div>
+                    </div>
+                    <div class="item-total flex center_justify_content flex-1">
+                        RM50.00
+                    </div>
+                </div>
+            </div>
+
+
         </div>
+
+
+        <div class="content-footer flex w-85 mt-15px pdt-15 pdb-15">
+            <div class="cart-total flex-1 margin_a"><h1>Cart Totals</h1></div>
+            <div class="cal_cart_total flex flex_direction_column flex-1 w-85 margin_a">
+                <div class="subtotal flex flex-1">
+                    <p class="flex-1">SUBTOTAL</p>
+                    <p class="flex-1 flex right_justify_content">RM0.00</p>
+                </div>
+
+                <div class="shippingFee flex flex-1">
+                    <p class="flex-1">SHIPPING</p>
+                    <p class="flex-1 flex right_justify_content">RM0.00</p>
+                </div>
+
+                <div class="total flex flex-1">
+                    <p class="flex-1">TOTAL</p>
+                    <p class="total-price flex-1 flex right_justify_content">RM0.00</p>
+                </div>
+            </div>
+
+        </div>
+
+
 
     </div>
 
@@ -149,5 +314,21 @@
 </html>
 
 <script>
+    // item quantity adjustment
+    // hardcoded first. only work with item
+    function increaseValue() {
+        var value = parseInt(document.getElementById('number').value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById('number').value = value;
+    }
+
+    function decreaseValue() {
+        var value = parseInt(document.getElementById('number').value, 10);
+        value = isNaN(value) ? 0 : value;
+        value < 1 ? value = 1 : '';
+        value--;
+        document.getElementById('number').value = value;
+    }
 
 </script>

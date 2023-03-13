@@ -26,8 +26,9 @@
 }
 
 .header-logo-img {
-    width: 120px;
-    height: 20px;
+    width: 200px;
+    height: 100%;
+    object-fit:cover;
     margin-left: 10%;
 }
 
@@ -190,12 +191,99 @@ div.footer-box-2 ul a:hover, div.footer-box-3 ul a:hover{
 }
 
 .content-body {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item-container {
     background-color: #7e7e7e;
     height: 160px;
+    border-radius: 4px;
+}
 
+.cart-item-container {
+    flex-wrap: wrap;
 }
 
 .checkbox {
     width:  30px;
     height: 30px;
+}
+
+.item-img-name {
+    gap: 10px;
+}
+
+.item-img-container {
+    width: 120px;
+    height: 120px;
+}
+
+.item-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.item-name-container {
+    flex-direction: column;
+    gap: 5px;
+}
+
+.item-variation {
+    font-size: smaller;
+    font-weight: lighter;
+}
+
+/* quantity button */
+.value-button {
+    background-color: darkgrey;
+  }
+  
+  .value-button:hover {
+    cursor: pointer;
+  }
+
+  input#number {
+    width: 20px;
+    text-align: center;
+    border: none;
+    background-color: aliceblue;
+    
+  }
+
+  /*----------------------------------------------------------------*/
+/* media query */
+/* total when in mobile view */
+@media(max-width:426px) {
+    .header-bar-content-3, .header-bar-content-4, .header-bar-content-5 {
+        background-color: aqua;
+        display: none !important;
+    }
+
+    .break {
+        flex-basis: 100%;
+        height: 0;
+    }
+
+}
+
+.cart-total {
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.total-price {
+    font-weight: bolder;
+    font-size:x-large;
+}
+
+.content-footer {
+    background-color: grey;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cal_cart_total {
+    gap: 40px;
 }

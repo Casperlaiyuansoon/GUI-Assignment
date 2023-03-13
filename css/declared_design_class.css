@@ -37,6 +37,32 @@
     align-items: center;
 }
 
+/* parent > item > content */
+/* use for  item's content under .center_flex_content*/
+.center_justify_content {
+    justify-content: center;
+}
+
+.left_justify_content {
+    justify-content: left;
+}
+
+.right_justify_content {
+    justify-content: right;
+}
+
+.baseline_align_item {
+    align-items: baseline;
+}
+
+.center_align_item {
+    align-items: center;
+}
+
+.flex_direction_column {
+    flex-direction: column;
+}
+
 /* height & width */
 .h-200px {
     height:200px;
@@ -56,6 +82,10 @@
 
 .w-80 {
     width:80%;
+}
+
+.w-85 {
+    width:85%;
 }
 
 .flex {
