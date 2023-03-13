@@ -188,6 +188,12 @@ div.footer-box-2 ul a:hover, div.footer-box-3 ul a:hover{
 /* ========================================================================================= */
 /* content */
 
+/* img slider */
+.img-slider {
+    width: 100%;
+    height: 530px;
+}
+
 /* welcome-message */
 .content-welcome-message {
     flex-direction: column;
@@ -286,6 +292,10 @@ img.category-img-container:hover ~ p.encourage-message {
     .cat-box{
         width: 95%;
         height: 180px;
+    }
+
+    .img-slider {
+        height:150px;
     }
 
 }
