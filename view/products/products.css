@@ -126,15 +126,23 @@
 @media(max-width:426px) {
 
     .header-center-menu,
-    .header-right-container {
+    .header-right-container a.link {
         display: none;
+    }
+
+    .break {
+        flex-basis: 100%;
+        height: 0;
     }
     /* TODO  */
     /* when hide, show the menu icon that list all the hidden element */
+    #header-menu-icon {
+        display: block;
+    }
 }
 
 .display-none {
-    display: none !important;
+    display: none;
 }
 
 /* custom scrool bar */
@@ -216,167 +224,74 @@ div.footer-box-2 ul a:hover, div.footer-box-3 ul a:hover{
 }
 
 /* END OF HEADER & FOOTER */
-/* ========================================================================================= */
-/* content */
-.content {
-    flex-direction: column;
-}
 
-.cart-empty-message {
-    gap: 30px;
-}
-
-.cart-empty-message p{
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 400;
-    font-family:  "Work Sans", sans-serif;
-    letter-spacing: 3px;
-}
-
-.cart-empty-message button{
-    height: 80px;
-    width: 200px;
-    border: none;
-    border-radius: 5px;
-    background-color: #7595C6;
-}
-
-.cart-empty-message button a{
+/* ======================================================== */
+/* Content */
+.category ul li a {
     text-decoration: none;
-    color: white;
-    font-size: 23px;
-    line-height: 36px;
-    font-weight: 400;
-    font-family:  "Work Sans", sans-serif;
-    letter-spacing: 1px;
+    color: #999;
+    transition: color 0.5s ease;
 }
 
-.content-header-bar {
-    background-color: #7595C6;
-    height: 40px;
+.category ul li a:hover {
+    text-decoration: underline lightgrey;
+    color: black;
 }
 
-.content-header-bar div{
-    color: aliceblue;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+.category ul li a:active::after {
+    text-decoration: underline;
+    color: black;
 }
 
-.content-body {
-    flex-direction: column;
-    gap: 10px;
+.category ul {
+    list-style-type: none;
 }
 
-.item-container {
-    background-color: whitesmoke;
-    height: 160px;
-    border-radius: 4px;
-}
-
-.cart-item-container {
-    flex-wrap: wrap;
-}
-
-.checkbox {
-    width:  30px;
-    height: 30px;
-}
-
-.checkbox:checked:before {
-    background-color: #487aff;
-
-}
-
-.item-img-name {
-    gap: 10px;
-}
-
-.item-img-container {
-    width: 120px;
-    height: 120px;
-}
-
-.item-img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-}
-
-.item-name-container {
-    flex-direction: column;
-    gap: 5px;
-}
-
-.item-variation {
-    font-size: smaller;
-    font-weight: lighter;
-}
-
-/* quantity button */
-.value-button {
-    background-color: whitesmoke;
-    border-radius: 1px;
-  }
-  
-  .value-button:hover {
-    cursor: pointer;
-  }
-
-  input#number {
-    width: 20px;
-    text-align: center;
-    border: none;
-    background-color: aliceblue;
-    
-  }
-
-  /*----------------------------------------------------------------*/
-/* media query */
-/* total when in mobile view */
-@media(max-width:426px) {
-    .header-bar-content-3, .header-bar-content-4, .header-bar-content-5 {
-        display: none !important;
-    }
-
-    .break {
-        flex-basis: 100%;
-        height: 0;
-    }
-
-}
-
-.cart-total {
-    font-size: xx-large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.total-price {
-    font-weight: bolder;
-    font-size:x-large;
-}
-
-.content-footer {
-    background-color: #7595C6;
-    flex-direction: column;
-    gap: 15px;
-    color: white;
-}
-
-.cal_cart_total {
-    gap: 40px;
-}
-
-.check-out {
+.product-container {
     width:250px;
-    background-color:#6f92f1;
-    text-align: center;
-    padding: 8px 0px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    border: 1px solid whitesmoke;
-    font-size: larger;
+    height: 380px;
+    object-fit:cover;
 }
 
-.check-out:hover {
-    background-color:#7595C6;
+.products {
+    gap:25px;
+}
+
+.product-img {
+    height:80%;
+    width:100%;
+}
+
+.product-detail {
+    height:14%;
+}
+
+.price-range-input {
+    width: 60px;
+    padding: 5px;
+}
+
+.price-range-filter-container {
+    gap:10px;
+}
+
+/* hide increase & decrease button in number input */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.filter-button {
+    background-color: #487aff;
+    border: none;
+    padding: 8px;
+    color: whitesmoke;
+    transition:all 0.3s ease;
+}
+
+.filter-button:hover {
+    background-color: #6f92f1;
+    border: 1px solid white;
 }
