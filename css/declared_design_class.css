@@ -7,6 +7,10 @@
     padding-top: 15px;
 }
 
+.pdr-15 {
+    padding-right: 15px;
+}
+
 .pdb-15 {
     padding-bottom: 15px;
 }
@@ -67,6 +71,10 @@
     align-items: center;
 }
 
+.end_align_item {
+    align-items: end;
+}
+
 .flex_direction_column {
     flex-direction: column;
 }
@@ -124,4 +132,12 @@
 /* font text */
 .font-bold {
     font-weight: 700;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-center {
+    text-align: center;
 }
