@@ -139,6 +139,11 @@
     #header-menu-icon {
         display: block;
     }
+
+    .footer-box {
+        flex-direction: column;
+        gap:5px;
+    }
 }
 
 .display-none {
@@ -213,9 +218,8 @@ div.footer-box-2 ul a:hover, div.footer-box-3 ul a:hover{
 }
 
 .footer-logo-img-container {
-    width: 80%;
-    width: 120px;
-    object-fit: cover;
+    width: 300px;
+    object-fit: fill;
 }
 
 .footer-logo-img {
@@ -244,6 +248,18 @@ div.footer-box-2 ul a:hover, div.footer-box-3 ul a:hover{
     font-family: "Work Sans", sans-serif;
     font-weight: 400;
     font-size: large;
+}
+
+.content_logo_brand {
+    height: 110px;
+    max-height: 110px;
+    object-fit:cover;
+}
+
+.content_logo_brand img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
 }
 
 .content_p_font {

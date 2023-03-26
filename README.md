@@ -13,3 +13,5 @@
 <!-- store file according to controller, model and view folder -->
 <!-- view               = frontend -->
 <!-- model / controller = backend  -->
+
+<!-- home.html & home.css have the latest header and footer -->
