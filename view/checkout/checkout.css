@@ -231,6 +231,28 @@ div.footer-box-2 ul a:hover, div.footer-box-3 ul a:hover{
     gap:10px
 }
 
+.tf{
+    outline: 0;
+    border: none;
+    border-bottom: 2px solid #487aff;
+    margin: 7px 0 10px 0;
+}
+
+.sel{
+    outline: 0;
+    border: none;
+    border-bottom: 2px solid #487aff;
+    margin: 7px 0 10px 0;
+}
+
+.tf, .sel {
+    transition: all 0.3s ease;
+}
+
+.tf:focus, .sel:focus {
+    border-bottom: 3px solid darkblue;
+}
+
 .box-title {
     text-decoration: underline;
     font-weight: 700;
